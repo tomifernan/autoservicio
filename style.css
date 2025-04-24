@@ -1,0 +1,403 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f5f5f5;
+}
+.pagos a img {
+  width: 30px; /* Tamaño estándar para escritorio */
+  height: auto;
+  vertical-align: middle;
+}
+
+.header {
+  background-color: #2e9916;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+img {
+  width: 200px;
+  height: auto;
+  padding-top: 20px;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-list li a:hover {
+  color: #1abc9c;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.inicio-section,
+.section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.inicio-section h1 {
+  font-size: 24px;
+  color: #2c3e50;
+}
+
+.section h1 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #2c3e50;
+}
+
+.promociones {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.promociones article {
+  background: white;
+  padding: 15px;
+  margin: 10px;
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.promociones img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.promociones h2 {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.promociones p {
+  font-size: 16px;
+  color: #333;
+}
+
+.horarios {
+  background-color: #e8f5e9;
+  border-left: 5px solid #2ecc71;
+  padding: 10px 15px;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
+.horarios h3 {
+  margin-bottom: 5px;
+  color: #27ae60;
+}
+
+.horarios p {
+  color: #2d3436;
+  margin: 2px 0;
+}
+
+.asociate {
+  background-color: #f0f0f0;
+  font-weight: bold;
+  text-align: center;
+}
+
+h1 {
+  padding-top: 15px;
+  color: #2e9916;
+}
+
+p {
+  padding-top: 15px;
+}
+
+h2 {
+  padding-top: 15px;
+  color: #2e9916;
+}
+h3 {
+  padding-top: 30px;
+  color: #2e9916;
+  font-weight: bold;
+  font-size: 25px;  
+}
+
+ol {
+  padding-top: 15px;
+}
+
+li {
+  padding-top: 15px;
+}
+
+.carousel {
+  position: relative;
+  max-width: 350px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: white;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  min-width: 100%;
+  text-align: center;
+  padding: 15px;
+  display: none;
+}
+
+.carousel-item.active {
+  display: block;
+}
+
+.carousel-item img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.carousel-item h2 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  color: #333;
+}
+
+.carousel-item span {
+  display: block;
+  font-size: 16px;
+  color: #1abc9c;
+  font-weight: bold;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(46, 153, 22, 0.8);
+  border: none;
+  color: white;
+  font-size: 24px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  user-select: none;
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
+
+.carousel-btn:hover {
+  background-color: rgba(26, 188, 156, 0.9);
+}
+
+.social-icons a {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #2c3e50;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #1abc9c;
+}
+
+.pagos {
+  background-color: #e8f5e9;
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 30px auto;
+  max-width: 600px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(46, 153, 22, 0.8);
+}
+
+.pagos h1 {
+  color: #2e9916;
+  margin-bottom: 20px;
+}
+
+.pagos a {
+  display: inline-block;
+  background: white;
+  margin: 10px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: bold;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.pagos a i {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #27ae60;
+}
+
+.pagos a:hover {
+  background-color: #1abc9c;
+  color: white;
+}
+
+.pagos a:hover i {
+  color: white;
+}
+
+#contacto {
+  padding: 40px 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+#contacto h1 {
+  color: #2e9916;
+  margin-bottom: 25px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #f0f0f0;
+  color: #2c3e50;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  border: solid 2px #2e9916;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.social-icons a i {
+  font-size: 20px;
+}
+
+.social-icons a:hover {
+  background-color: #1abc9c;
+  color: white;
+}
+
+.social-icons a:hover i {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #2e9916;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+
+  .nav.nav-active {
+    display: flex;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .hamburger.hamburger-active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.hamburger-active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.hamburger-active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  .logo {
+    font-size: 16px;
+    text-align: left;
+  }
+}
+@media (max-width: 768px) {
+  .pagos a {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .social-icons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-icons a {
+    width: 80%;
+  }
+}
